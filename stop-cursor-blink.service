@@ -1,0 +1,9 @@
+[Unit]
+Description=Stop cursor blink on virtual console
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c 'echo 0 > /sys/class/graphics/fbcon/cursor_blink'
+
+[Install]
+WantedBy=multi-user.target
