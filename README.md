@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```sh
-sudo wget https://raw.github.com/kusabashira/stop-cursor-blink.service/master/stop-cursor-blink.service -O /systemd/system/stop-cursor-blink.service
+sudo wget https://raw.githubusercontent.com/kusabashira/stop-cursor-blink.service/master/stop-cursor-blink.service -O /etc/systemd/system/stop-cursor-blink.service
 sudo systemctl start stop-cursor-blink
 sudo systemctl enable stop-cursor-blink
 ```
